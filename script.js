@@ -38,11 +38,7 @@ function selectAll(btn) {
       images[i].classList.add('image-selected');
     }
   }
-  if (btn.value == 'Unselect All') {
-    btn.value = 'Select All';
-  } else {
-    btn.value = 'Unselect All';
-  }
+  btn.value=='Unselect All' ? 'Select All' : 'Unselect All'
 }
 
 function slideshow(btn) {
