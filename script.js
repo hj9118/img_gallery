@@ -14,7 +14,7 @@ req.onreadystatechange = function () {
         this.timerId = setTimeout(function () {
           element.classList.add('image-magnified');
         }, 1000);
-        div.onmouseover = function () {
+        div.onmouseout = function () {
           clearTimeout(this.timerId);
           this.classList.remove('image-magnified');
         };
